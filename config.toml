@@ -1,0 +1,18 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Knowledge base"
+theme = "kube"
+description = "A knowledge base for IT-professionals in governments"
+Paginate = 4
+
+[Params]
+  RSSLink = "/index.xml"
+  author = "Stichting Delta10" # add your company name
+  github = "" # add your github profile name
+  twitter = "" # add your twitter profile
+  email = "info@delta10.nl"
+
+[[menu.main]]
+    name = "Docs"
+    weight = -100
+    url = "/docs/"
