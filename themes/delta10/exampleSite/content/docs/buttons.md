@@ -99,7 +99,7 @@ toc = true
   <pre class="code"><span class="hljs-comment">// scss</span>
 .button.red {
     <span class="hljs-comment">// $text-color, $back-color</span>
-    @include <span class="hljs-keyword">button</span>(<span class="hljs-meta">#fff, #ff3366);</span>
+    @include <span class="hljs-keyword">button</span>(<span class="hljs-meta">#fff, #27cf7a);</span>
 }
 
 <span class="hljs-comment">// html</span>

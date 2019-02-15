@@ -1,8 +1,8 @@
 baseURL = "/"
-languageCode = "en-us"
-title = "Knowledge base"
-theme = "kube"
-description = "A knowledge base for IT-professionals in governments"
+languageCode = "nl-nl"
+title = "Kennisbank"
+theme = "delta10"
+description = "Kennisbank voor IT-professionals bij overheden"
 Paginate = 4
 
 [Params]

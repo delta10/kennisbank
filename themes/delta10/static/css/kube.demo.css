@@ -172,7 +172,7 @@ button, .button {
 
 .button.red {
   color: #fff;
-  background-color: #ff3366; }
+  background-color: #27cf7a; }
   .button.red:hover {
     color: #fff;
     background-color: #ff99b3; }
@@ -181,8 +181,8 @@ button, .button {
     background-color: rgba(255, 51, 102, 0.7); }
   .button.red.outline {
     background: none;
-    color: #ff3366;
-    border-color: #ff3366; }
+    color: #27cf7a;
+    border-color: #27cf7a; }
     .button.red.outline:hover {
       color: rgba(255, 51, 102, 0.6);
       border-color: rgba(255, 51, 102, 0.5); }
@@ -386,7 +386,7 @@ button, .button {
   background: #007eff; }
 
 .swatch-bg-link-hover {
-  background: #ff3366; }
+  background: #27cf7a; }
 
 .swatch-bg-button-primary {
   background: #007eff; }
