@@ -473,7 +473,7 @@ body {
     padding: 6px 24px;
 }
 
-.navbar-brand {
+.navbar-brand, .navbar-brand a, .navbar-brand:hover {
     color: #ffffff;
     padding-top: 0;
     padding-bottom: 0;
