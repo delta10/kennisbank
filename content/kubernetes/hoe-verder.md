@@ -1,7 +1,7 @@
 ---
-title: "Aan de slag"
+title: "Meer informatie"
 description: ""
-weight: 20
+weight: 30
 menu:
   docs:
     parent: "Kubernetes"

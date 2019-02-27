@@ -1,23 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
-    <title>Page 1</title>
-    <defs>
-        <polygon id="path-1" points="1.52423806e-15 49.0335806 1.52423806e-15 0.000294205603 49.0340219 0.000294205603 49.0340219 49.0335806"></polygon>
-    </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Home-2" transform="translate(-132.000000, -21.000000)">
-            <g id="Page-1" transform="translate(132.000000, 21.000000)">
-                <g id="Group-3">
-                    <mask id="mask-2" fill="white">
-                        <use xlink:href="#path-1"></use>
-                    </mask>
-                    <g id="Clip-2"></g>
-                    <path d="M24.5168884,38.1102169 C17.0097421,38.1102169 10.9240992,32.024574 10.9240992,24.5169374 C10.9240992,17.0093008 17.0097421,10.9236579 24.5168884,10.9236579 C32.0240347,10.9236579 38.1101679,17.0093008 38.1101679,24.5169374 C38.1101679,32.024574 32.0240347,38.1102169 24.5168884,38.1102169 M24.5168884,0.000294205603 C10.9765659,0.000294205603 -0.000245171335,10.9771052 -0.000245171335,24.5169374 C-0.000245171335,38.0572599 10.9765659,49.0335806 24.5168884,49.0335806 C38.0572109,49.0335806 49.0340219,38.0572599 49.0340219,24.5169374 C49.0340219,10.9771052 38.0572109,0.000294205603 24.5168884,0.000294205603" id="Fill-1" fill="#27CE7A" mask="url(#mask-2)"></path>
-                </g>
-                <path d="M10.9240011,24.5171335 C10.9240011,17.0094969 17.009644,10.923854 24.5167903,10.923854 L24.5167903,0 L0.000147102801,0 L0.000147102801,49.0342671 L24.5167903,49.0342671 L24.5167903,38.1104131 C17.009644,38.1104131 10.9240011,32.0247702 10.9240011,24.5171335" id="Fill-14" fill="#00AAFF"></path>
-                <path d="M10.9240011,24.5171335 C10.9240011,17.0094969 17.009644,10.923854 24.5167903,10.923854 L24.5167903,0 C10.9764678,0 0.000147102801,10.976811 0.000147102801,24.5171335 C0.000147102801,38.0569657 10.9764678,49.0337768 24.5167903,49.0337768 L24.5167903,38.1104131 C17.009644,38.1104131 10.9240011,32.0247702 10.9240011,24.5171335" id="Fill-15" fill="#5A30FF"></path>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#26393E;}
+	.st1{fill:#00363E;}
+	.st2{filter:url(#Adobe_OpacityMaskFilter);}
+	.st3{fill:#FFFFFF;}
+	.st4{mask:url(#mask-2);fill:#27CE7A;}
+	.st5{fill:#00AAFF;}
+</style>
+<g id="Layer_2">
+	<rect x="0" class="st0" width="50" height="50"/>
+	<rect x="26.8" y="18.2" class="st1" width="1.4" height="1.4"/>
+</g>
+<g id="Layer_1">
+	<title>Page 1</title>
+	<desc>Created with Sketch.</desc>
+	<g id="Page-1_1_">
+		<g id="Home-2" transform="translate(-132.000000, -21.000000)">
+			<g id="Page-1" transform="translate(132.000000, 21.000000)">
+				<g id="Group-3">
+					<g id="Clip-2">
+					</g>
+					<defs>
+						<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0" y="0" width="50" height="50">
+							<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+						</filter>
+					</defs>
+					<mask maskUnits="userSpaceOnUse" x="0" y="0" width="50" height="50" id="mask-2">
+						<g class="st2">
+							<polygon id="path-1" class="st3" points="0,50 0,0 50,0 50,50 							"/>
+						</g>
+					</mask>
+					<path id="Fill-1" class="st4" d="M25,38.9c-7.7,0-13.9-6.2-13.9-13.9S17.3,11.1,25,11.1S38.9,17.3,38.9,25S32.7,38.9,25,38.9
+						 M25,0C11.2,0,0,11.2,0,25c0,13.8,11.2,25,25,25s25-11.2,25-25C50,11.2,38.8,0,25,0"/>
+				</g>
+				<path id="Fill-14" class="st5" d="M11.1,25c0-7.7,6.2-13.9,13.9-13.9V0H0v50h25V38.9C17.3,38.9,11.1,32.7,11.1,25"/>
+				<path id="Fill-15" class="st3" d="M11.1,25c0-7.7,6.2-13.9,13.9-13.9V0C11.2,0,0,11.2,0,25c0,13.8,11.2,25,25,25V38.9
+					C17.3,38.9,11.1,32.7,11.1,25"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="Layer_3">
+</g>
 </svg>

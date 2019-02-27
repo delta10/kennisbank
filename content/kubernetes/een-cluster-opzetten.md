@@ -1,7 +1,7 @@
 ---
-title: "Aan de slag"
+title: "Een cluster opzetten"
 description: ""
-weight: 20
+weight: 10
 menu:
   docs:
     parent: "Kubernetes"

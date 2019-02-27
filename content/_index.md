@@ -1,5 +1,5 @@
 ---
-title: "Introductie"
+title: "Over de kennisbank"
 description: ""
 weight: 10
 menu:
