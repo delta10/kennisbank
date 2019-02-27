@@ -1,29 +1,61 @@
-<div class="show-sm">
-    <div id="nav-toggle-box">
-      <div id="nav-toggle-brand">
-        <a href="/">{{ .Site.Title }}</a>
-      </div><a data-component="toggleme" data-target="#top" href="#" id="nav-toggle"><i class="kube-menu"></i></a>
-    </div>
-  </div>
-  <div class="hide-sm" id="top">
-    <div id="top-brand">
-      <a href="/" title="home">{{ .Site.Title }}</a>
-    </div>
-    <nav id="top-nav-main">
-      <ul>
-       {{ $currentPage := . }}
-       {{ range .Site.Menus.main }}
-    <li><a href="{{ .URL }}" {{if  $currentPage.IsMenuCurrent "main" . }} class="active"{{end}}>{{ .Name }}</a></li>
-    {{end}}
-      </ul>
-    </nav>
-    <nav id="top-nav-extra">
-      <ul>
-        {{ range .Site.Menus.extra }}
-          <li>
-            <a href="{{ .Permalink }}">{{ .Name }}</a>
-          </li>
-        {{ end }}
-      </ul>
-    </nav>
-  </div>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ "css/docsearch.min.css" | relURL }}" />
+        <link rel="stylesheet" href="{{ "css/highlight.css" | relURL }}" />
+        <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+
+        <title>{{ .Title }} {{ if ne .Title .Site.Title }} &middot; {{ .Site.Title }}{{ end }}</title>
+    </head>
+    <body>
+        <a id="skippy" class="sr-only sr-only-focusable" href="#content">
+            <div class="container">
+                <span class="skiplink-text">Skip to main content</span>
+            </div>
+        </a>
+        <header class="navbar navbar-expand flex-column flex-md-row bd-navbar">
+            <div class="navbar-brand" href="{{ "/" | absLangURL }}">
+                <img src="{{ "img/logo.svg" | relURL }}">
+                {{ .Site.Title }}
+            </div>
+            <ul class="navbar-nav ml-md-auto">
+                <li class="nav-item">
+                    <a class="nav-link p-2" href="https://gitlab.com/delta10/knowledge-base" target="_blank" rel="noopener" aria-label="Gitlab">
+                        <svg class="navbar-nav-svg" width="26" height="24" viewBox="0 0 26 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g id="Group" fill-rule="nonzero"><path d="M25.962 10.291l-1.454 4.474-2.88 8.867a.495.495 0 0 1-.942 0l-2.881-8.867H8.238l-2.88 8.867a.495.495 0 0 1-.943 0l-2.88-8.867L.08 10.291a.99.99 0 0 1 .36-1.107L13.02.044l12.581 9.14a.99.99 0 0 1 .36 1.107" id="path46" fill="#FC6D26" transform="matrix(1 0 0 -1 0 24.018)"/><path id="path50" fill="#E24329" transform="matrix(1 0 0 -1 0 33.226)" d="M13.021 9.252l4.784 14.722H8.238z"/><path id="path58" fill="#FC6D26" transform="matrix(1 0 0 -1 0 33.226)" d="M13.021 9.252L8.238 23.974H1.534z"/><path d="M1.534 23.974L.081 19.5a.99.99 0 0 1 .36-1.107l12.58-9.14-11.487 14.72z" id="path66" fill="#FCA326" transform="matrix(1 0 0 -1 0 33.226)"/><path d="M1.534.044h6.704L5.358 8.91a.495.495 0 0 1-.943 0L1.535.044z" id="path74" fill="#E24329" transform="matrix(1 0 0 -1 0 9.296)"/><path id="path78" fill="#FC6D26" transform="matrix(1 0 0 -1 0 33.226)" d="M13.021 9.252l4.784 14.722h6.704z"/><path d="M24.509 23.974l1.453-4.474a.99.99 0 0 0-.36-1.107l-12.58-9.14 11.487 14.72z" id="path82" fill="#FCA326" transform="matrix(1 0 0 -1 0 33.226)"/><path d="M24.509.044h-6.704l2.88 8.866a.495.495 0 0 0 .943 0l2.88-8.866z" id="path86" fill="#E24329" transform="matrix(1 0 0 -1 0 9.296)"/></g></g></svg>
+                    </a>
+                </li>
+            </ul>
+        </header>
+
+        <div class="container-fluid">
+            <div class="row flex-xl-nowrap">
+                <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+                    <form class="bd-search d-flex align-items-center">
+                        <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input type="search" class="form-control ds-input" id="search-input" placeholder="Search..." autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: -apple-system, system-ui, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="ds-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="ds-dataset-1"></div></span></span>
+                        <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+                        </button>
+                    </form>
+
+                    {{ $currentPage := . }}
+                    <nav class="collapse bd-links" id="bd-docs-nav">
+                        {{ range .Site.Menus.docs }}
+                            <div class="bd-toc-item {{ if or ($currentPage.HasMenuCurrent "docs" .) ($currentPage.IsMenuCurrent "docs" .) }}active{{ end }}">
+                                <a class="bd-toc-link" href="{{ .URL }}">{{ .Name }}</a>
+                                {{ if .HasChildren }}
+                                    {{ range .Children }}
+                                        <ul class="nav bd-sidenav">
+                                            <li class="{{ if $currentPage.IsMenuCurrent "docs" . }}active bd-sidenav-active{{ end }}">
+                                                <a href="{{ .URL }}">{{ .Name }}</a>
+                                            </li>
+                                        </ul>
+                                    {{ end }}
+                                {{ end }}
+                            </div>
+                        {{end}}
+                    </nav>
+                </div>
