@@ -1,0 +1,21 @@
+stages:
+  - deploy
+
+image: docker:git
+services:
+  - docker:dind
+variables:
+  DOCKER_DRIVER: overlay
+
+before_script:
+  - docker login -u gitlab-ci-token -p "$CI_BUILD_TOKEN" "$CI_REGISTRY"
+
+build container:
+  stage: deploy
+  script:
+    - docker build -t "$CI_REGISTRY_IMAGE:latest" .
+    - docker push "$CI_REGISTRY_IMAGE:latest"
+  environment:
+    name: prod
+  only:
+    - master
