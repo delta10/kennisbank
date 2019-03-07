@@ -82,6 +82,12 @@ body {
     order: 1;
 }
 
+.bd-content img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
 .bd-toc {
     position: -webkit-sticky;
     position: sticky;

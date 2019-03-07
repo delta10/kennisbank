@@ -4,7 +4,7 @@
 name = "Delta10"
 license = "EUPL-1.2"
 description = "A Bootstrap 4 theme for documentation"
-homepage = "https://gitlab.com/delta10/knowledge-base"
+homepage = "https://gitlab.com/delta10/kennisbank"
 tags = []
 features = []
 min_version = "0.36"
