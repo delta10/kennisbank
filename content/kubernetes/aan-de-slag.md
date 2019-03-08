@@ -8,7 +8,7 @@ menu:
 ---
 
 #### Vereisten
-Om aan de slag te gaan heb je toegang nodig tot een Kubernetes cluster. Dit kan een bestaand cluster zijn waar je toegang tot hebt. Heb je geen toegang tot een cluster, dan kun je zelf een cluster op je eigen computer opzetten door de handleiding [een lokaal cluster opzetten](een-lokaal-cluster-opzetten/) te volgen.
+Om aan de slag te gaan heb je toegang nodig tot een Kubernetes cluster. Dit kan een bestaand cluster zijn waar je toegang tot hebt. Heb je geen toegang tot een cluster, dan kun je zelf een cluster op je eigen computer opzetten door de handleiding [een lokaal cluster opzetten](../een-lokaal-cluster-opzetten/) te volgen.
 
 Zorg vervolgens dat het programma [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) op je lokale computer geïnstalleerd staat. Met dit programma kunnen we eenvoudig verbinding te leggen met het cluster. Wanneer je een bestaand cluster gebruikt dan kun je van de beheerder de installatieinstructies krijgen die je nodig hebt om kubectl te laten werken. Wanneer je een lokaal cluster opzet dan configureert Docker Desktop of minikube je lokale omgeving zodat kubectl direct werkt.
 
