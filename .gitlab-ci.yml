@@ -1,20 +1,29 @@
 stages:
+  - build
   - deploy
 
-image: docker:git
-services:
-  - docker:dind
-variables:
-  DOCKER_DRIVER: overlay
-
-before_script:
-  - docker login -u gitlab-ci-token -p "$CI_BUILD_TOKEN" "$CI_REGISTRY"
-
-build container:
-  stage: deploy
+build:
+  stage: build
+  image: docker:git
+  before_script:
+    - docker login -u gitlab-ci-token -p "$CI_BUILD_TOKEN" "$CI_REGISTRY"
   script:
     - docker build -t "$CI_REGISTRY_IMAGE:latest" .
+    - docker build -t "$CI_REGISTRY_IMAGE:${CI_COMMIT_SHA:0:8}" .
     - docker push "$CI_REGISTRY_IMAGE:latest"
+    - docker push "$CI_REGISTRY_IMAGE:${CI_COMMIT_SHA:0:8}"
+  services:
+    - docker:dind
+  variables:
+    DOCKER_DRIVER: overlay
+  only:
+    - master
+
+deploy:
+  stage: deploy
+  image: delta10/kubectl:1.13.4
+  script:
+    - kubectl -n kennisbank set image deployment/kennisbank kennisbank=$CI_REGISTRY_IMAGE:${CI_COMMIT_SHA:0:8}
   environment:
     name: prod
   only:
