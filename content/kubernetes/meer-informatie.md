@@ -9,6 +9,7 @@ menu:
 
 Op internet zijn veel bronnen te vinden over Kubernetes. Hieronder een lijst:
 
+- [Kubernetes in 5 minutes](https://www.youtube.com/watch?v=PH-2FfFD2PU). Een kort filmpje van VMWare met een uitleg van de de basiscomponenten.
 - [De officiële Kubernetes documentatie](https://kubernetes.io/docs/home/). In de officiële documentatie worden alle mogelijkheden van Kubernetes belicht en kun je veel technische documentatie vinden over alle aspecten van Kubernetes.
 - [Kubernetes basics](https://kubernetes.io/docs/tutorials/kubernetes-basics/). Een interactieve tutorial die ongeveer dezelfde onderwerpen behandelt als onze "Aan de slag".
 - [Scalable Microservices with Kubernetes](https://eu.udacity.com/course/scalable-microservices-with-kubernetes--ud615). Een uitgebreide gratis cursus op Udacity over Kubernetes met uitleg over microservices, het bouwen van Docker containers, Kubenetes en het uitrollen van microservices.
